@@ -29,8 +29,8 @@ const CreatePost = ({ isAuth }) => {
 
   const postsCollectionRef = collection(db, "posts");
   const createPost = async () => {
-    if (title == "" || postText == "" || itemPrice == "" || contactInfo == "") {
-      window.alert("You must fill out all the blanks!");
+    if (title === "" || postText === "" || itemPrice === "" || contactInfo === "" || imgRef === "") {
+      window.alert("Sorry! You must fill out all the blanks and upload a picture of your item!");
       return;
     }
 
