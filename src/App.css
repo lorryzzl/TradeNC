@@ -256,7 +256,7 @@ textarea {
 }
 
 .postHeader .title {
-  flex: 50%;
+  flex: 95%;
   font-size: 68%;
   margin: 0rem auto;
 }
