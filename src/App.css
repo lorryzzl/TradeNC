@@ -277,11 +277,12 @@ textarea {
 
 .postImage {
   display: block;
-  height: 60%;
+  height: 10em;
   width: 60%;
   margin: 2.5% auto;
   border-color: transparent;
   border-radius: 6px;
+  object-fit: cover;
 }
 
 .post .postTextContainer {
@@ -289,7 +290,7 @@ textarea {
   word-wrap: break-word;
   background-color: #f1f1f1;
   border-radius: 8px;
-  height: auto;
+  height: 70px;
   max-height: 70px;
   width: 100%;
   overflow: hidden;
