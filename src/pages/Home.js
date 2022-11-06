@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
 
-const Home = ({ isAuth }) =>  {
+const Home = ({ isAuth }) => {
   const [postLists, setPostList] = useState([]);
   const postsCollectionRef = collection(db, "posts");
 
@@ -24,6 +24,7 @@ const Home = ({ isAuth }) =>  {
   return (
     <div className="homePage">
       {postLists.map((post) => {
+        let imgUrl = post.imgRef;
         return (
           <div className="post">
             <div className="postHeader">
@@ -31,7 +32,7 @@ const Home = ({ isAuth }) =>  {
                 <h1> {post.title}</h1>
               </div>
               <div className="deletePost">
-              {isAuth && post.author.id === auth.currentUser.uid && (
+                {isAuth && post.author.id === auth.currentUser.uid && (
                   <button
                     onClick={() => {
                       deletePost(post.id);
@@ -44,12 +45,19 @@ const Home = ({ isAuth }) =>  {
               </div>
             </div>
             <div className="postTextContainer"> {post.postText} </div>
+            <div className="priceContainer"> Price: {post.itemPrice}</div>
+            <div className="contactContainer">
+              {" "}
+              Contact info: {post.contactInfo}{" "}
+            </div>
+            <img src={imgUrl}></img>
             <h3>@{post.author.name}</h3>
+            <h3>Posted on {post.myPostTime}</h3>
           </div>
         );
       })}
     </div>
   );
-}
+};
 
 export default Home;
