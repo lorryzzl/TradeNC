@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 const CreatePost = ({isAuth}) => {
   const [title,setTitle]= useState("")
   const [postText, setPostText] = useState("");
+  const [itemPrice, setItemPrice] = useState("");
+  const [contactInfo, setContactInfo] = useState("");
 
   let navigate = useNavigate();
 
@@ -36,6 +38,22 @@ const CreatePost = ({isAuth}) => {
         <textarea placeholder="Add description..." onChange={(e) =>{
           setPostText(e.target.value)
         }}/>
+      </div>
+      <div>
+        <div className="inputGp">
+          <label>Price</label>
+          <input placeholder="Price...($)" onChange={(e) => {
+            setItemPrice(e.target.value);
+          }}/>
+        </div>
+      </div>
+      <div>
+        <div className="inputGp">
+          <label>Contact Information</label>
+          <input placeholder="Enter your email or phone" onChange={(e) => {
+            setContactInfo(e.target.value);
+          }}/>
+        </div>
       </div>
     </div>
     <button onClick={createPost}>Submit Post</button>
