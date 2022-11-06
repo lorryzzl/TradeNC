@@ -231,6 +231,7 @@ textarea {
   align-items: flex-start;
   justify-content: center;
   padding-top: 20px;
+  background: linear-gradient(#D6EAF8, #EBF5FB)
 }
 
 .homePage .post {
@@ -300,6 +301,8 @@ textarea {
 
 .post .priceContainer {
   margin: 1% 1%;
+  color: red;
+  font-weight: bold;
 }
 
 .post .contactContainer {
