@@ -1,2 +1,5 @@
 node_modules/
 .gitattributes
+node_modules/.cache/.eslintcache
+node_modules/.cache/.eslintcache
+*.pack
