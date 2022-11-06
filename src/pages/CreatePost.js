@@ -112,9 +112,9 @@ const CreatePost = ({ isAuth }) => {
             }}
           />
         </div>
-        <button onClick={uploadImage}> Upload Image </button>
+        <button className = "uploadButton" onClick={uploadImage}> Upload Image </button>
       </div>
-      <button onClick={createPost}>Submit Post</button>
+      <button className = "submitButton" onClick={createPost}>Submit Post</button>
     </div>
   );
 };

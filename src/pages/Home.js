@@ -39,7 +39,7 @@ const Home = ({ isAuth }) => {
                     }}
                   >
                     {" "}
-                    &#128465;
+                    X
                   </button>
                 )}
               </div>
@@ -50,7 +50,7 @@ const Home = ({ isAuth }) => {
               {" "}
               Contact info: {post.contactInfo}{" "}
             </div>
-            <img src={imgUrl}></img>
+            <img className = "postImage" src={imgUrl}></img>
             <h3>@{post.author.name}</h3>
             <h3>Posted on {post.myPostTime}</h3>
           </div>

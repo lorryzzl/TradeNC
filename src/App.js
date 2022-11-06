@@ -7,6 +7,8 @@ import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
 
+import logo from './tradeNC.jpeg';
+
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
 
@@ -19,16 +21,20 @@ function App() {
   };
 
   return (
+
     <Router>
       <nav>
-        <Link to="/"> Home </Link>
+      <div>
+        <img className = "tradeNCLogo" src={logo} alt="nc"/>
+      </div>
+        <Link className="wlogin" to="/"> Home </Link>
 
         {!isAuth ? (
-          <Link to="/login"> Login </Link>
+          <Link className="wlogin" to="/login"> Login </Link>
         ) : (
           <>
-            <Link to="/createpost"> Create Post </Link>
-            <button onClick={signUserOut}> Log Out</button>
+            <Link className="wlogin" to="/createpost"> Sell My Item </Link>
+            <button className="logout" onClick={signUserOut}> Log Out</button>
           </>
         )}
       </nav>
