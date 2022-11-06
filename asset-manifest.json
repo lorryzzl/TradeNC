@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/TradeNC/static/css/main.21e2d9aa.css",
+    "main.js": "/TradeNC/static/js/main.282b4e16.js",
+    "static/js/787.81a22672.chunk.js": "/TradeNC/static/js/787.81a22672.chunk.js",
+    "static/media/loginbg.jpeg": "/TradeNC/static/media/loginbg.dae44f9a0aa67e077101.jpeg",
+    "index.html": "/TradeNC/index.html",
+    "main.21e2d9aa.css.map": "/TradeNC/static/css/main.21e2d9aa.css.map",
+    "main.282b4e16.js.map": "/TradeNC/static/js/main.282b4e16.js.map",
+    "787.81a22672.chunk.js.map": "/TradeNC/static/js/787.81a22672.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21e2d9aa.css",
+    "static/js/main.282b4e16.js"
+  ]
+}
