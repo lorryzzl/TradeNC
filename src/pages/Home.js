@@ -70,3 +70,4 @@ const Home = ({ isAuth }) => {
 };
 
 export default Home;
+
