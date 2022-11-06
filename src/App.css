@@ -63,10 +63,10 @@ h3 {
 }
 
 .createPostPage {
-  width: 100%;
-  height: calc(100vh - 80px);
   display: grid;
   place-items: center;
+  background: linear-gradient(#D6EAF8, #EBF5FB);
+  background-size: cover;
 }
 
 .cpContainer {
