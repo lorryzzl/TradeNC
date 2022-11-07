@@ -1,4 +1,7 @@
 # TradeNC
+# Website:
+https://tradenc-b0f73.web.app/  
+
 ## Inspiration
 We wanted a platform that allows us to trade used items with other students.
 
