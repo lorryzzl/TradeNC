@@ -62,10 +62,10 @@ h3 {
 }
 
 .createPostPage {
-  width: 100%;
-  height: calc(100vh - 80px);
   display: grid;
   place-items: center;
+  background: linear-gradient(#D6EAF8, #EBF5FB);
+  background-size: cover;
 }
 
 .cpContainer {
@@ -292,7 +292,7 @@ textarea {
 }
 
 .postHeader .title {
-  flex: 90%;
+  flex: 95%;
   font-size: 68%;
   margin: 0rem auto;
 }

@@ -61,7 +61,7 @@ const CreatePost = ({ isAuth }) => {
   }, []);
 
   return (
-    <div className="ceatePostPate">
+    <div className="createPostPage">
       <div className="cpContainer">
         <h1>Post Your Items</h1>
         <div className="inputGp">
