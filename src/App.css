@@ -72,7 +72,7 @@ h3 {
   width: 75%;
   margin: 10px auto;
   height: auto;
-  padding: 20px;
+  padding: 35px 35px 100px 35px;
   border-radius: 5px;
   background-color: #f1f1f1;
   color: black;
@@ -96,7 +96,30 @@ h3 {
   width: 80%;
 }
 
+.inputSchool{
+  display: flex;
+  position: relative;
+  top: 40px;
+}
+
+.selectSchoolLabel{
+  padding: 0px 0px 0px 40px;
+  flex: 40%;
+  flex-grow: 0;
+}
+
+.selectSchool{
+  flex-grow: 0;
+  flex: 30%;
+  max-width:200px;
+  height: 30px;
+  border-radius: 10px;
+  border-color: #ffffffd4;
+}
+
 .submitButton {
+  position: relative;
+  top: 5px;
   border: transparent;
   background-color: #d2e0f9;
   font-size: 150%;
@@ -229,7 +252,22 @@ textarea {
   align-items: flex-start;
   justify-content: center;
   padding-top: 20px;
-  background: linear-gradient(#d6eaf8, #ebf5fb);
+  background: linear-gradient(#d5ebfb, #f2faff);
+}
+
+.selectSchoolHome{
+  width: 100%;
+  padding: 10px 0 10px 70px;
+  font-weight: bold;
+}
+
+.selectSchoolHome label{
+  padding-right: 20px;
+  font-size: larger;
+}
+
+.selectSchoolHome select{
+  border-color: #cdeaff;
 }
 
 .homePage .post {
@@ -268,7 +306,6 @@ textarea {
 
 .deletePost button {
   border: none;
-
   background: none;
   font-size: 30px;
   cursor: pointer;
@@ -305,6 +342,8 @@ textarea {
 
 .post .contactContainer {
   margin: 1% 1%;
+  display:flex;
+  justify-content: space-between;
 }
 
 .closeIcon :hover {

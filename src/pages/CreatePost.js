@@ -13,6 +13,7 @@ const CreatePost = ({ isAuth }) => {
   const [contactInfo, setContactInfo] = useState("");
   const [imageUpload, setImageUpload] = useState(null);
   const [imgRef, setImgRef] = useState("");
+  const [schoolName, setSchoolName] = useState("");
 
   const uploadImage = () => {
     if (imageUpload == null) return;
@@ -43,6 +44,7 @@ const CreatePost = ({ isAuth }) => {
       itemPrice,
       contactInfo,
       imgRef,
+      schoolName,
       myPostTime,
       author: {
         name: auth.currentUser.displayName,
@@ -113,6 +115,18 @@ const CreatePost = ({ isAuth }) => {
           />
         </div>
         <button className = "uploadButton" onClick={uploadImage}> Upload Image </button>
+        <div className="inputSchool">
+          <label className="selectSchoolLabel">Select a university/college</label>
+          <select className="selectSchool" onChange={(e) => {
+            setSchoolName(e.target.value)
+          }}>
+            <option></option>
+            <option value="UNC - Chapel Hill">UNC - Chapel Hill</option>
+            <option value="Duke">Duke</option>
+            <option value="NCSU">NCSU</option>
+            <option value="NCCU">NCCU</option>
+          </select>
+        </div>
       </div>
       <button className = "submitButton" onClick={createPost}>Submit Post</button>
     </div>

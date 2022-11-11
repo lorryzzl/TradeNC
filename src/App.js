@@ -12,7 +12,6 @@ import logo from './tradeNC.jpeg';
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
-
   const signUserOut = () => {
     signOut(auth).then(() => {
       localStorage.clear();
@@ -22,14 +21,12 @@ function App() {
   };
 
   return (
-
     <Router>
       <nav>
-      <div>
-        <img className = "tradeNCLogo" src={logo} alt="nc"/>
-      </div>
+        <div>
+          <img className = "tradeNCLogo" src={logo} alt="tradenc"/>
+        </div>
         <Link className="wlogin" to="/"> Home </Link>
-
         {!isAuth ? (
           <Link className="wlogin" to="/login"> Login </Link>
         ) : (
